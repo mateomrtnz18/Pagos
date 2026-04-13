@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagar ahora</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+
+<h2>Completa tu pago</h2>
+<p>Ingresa tu correo para continuar</p>
+
+<input type="email" id="correo" placeholder="Correo">
+<br><br>
+
+<button onclick="pagar()">Continuar</button>
+
+<script>
+function pagar() {
+  let correo = document.getElementById("correo").value;
+
+  if(correo === "") {
+    alert("Ingresa tu correo");
+    return;
+  }
+
+  window.location.href = "https://mpago.li/2dDX22g";
+}
+</script>
+
+</body>
+</html>
